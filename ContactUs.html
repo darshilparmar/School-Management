@@ -1,0 +1,133 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>School Education</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="layout/scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#featured_slide').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+        timeout: 5000,
+        fx: 'fade',
+        pager: '#fs_pagination',
+        pause: 1,
+        pauseOnPagerHover: 0
+    });
+});
+</script>
+
+<!-- End Homepage Only Scripts -->
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      <div class="topbox">
+        <h2>R.N.Shah High School</h2>
+        <p>R.N.Shah High School was established in the year 1990. The school is a non-denominational and co-educational institution affiliated to Maharashtra State Board of Secondary and Higher Secondary Education.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+      <div class="topbox">
+        <h2>Teachers Login Here</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Teachers Login</legend>
+            <label for="teachername">Username:
+              <input type="text" name="teachername" id="teachername" value="" />
+            </label>
+            <label for="teacherpass">Password:
+              <input type="password" name="teacherpass" id="teacherpass" value="" />
+            </label>
+            <label for="teacherremember">
+              <input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+              Remember me</label>
+            <p>
+              <input type="submit" name="teacherlogin"  id="teacherlogin" value="Login" />
+              &nbsp;
+              <input type="reset" name="teacherreset" id="teacherreset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <div class="topbox last">
+        <h2>Admin Login Here</h2>
+        <form action="admincheck.asp" method="post">
+          <fieldset>
+            <legend>Admin Login Form</legend>
+            <label for="admin">Username:
+              <input type="text" name="adminname" id="adminname" value="" />
+            </label>
+            <label for="password">Password:
+              <input type="password" name="adminpass" id="adminpass" value="" />
+            </label>
+            <label for="adminmember">
+              <input class="checkbox" type="checkbox" name="adminmember" id="adminmember"  />
+              Remember me</label>
+            <p>
+              <input type="submit" name="adminlogin"  id="adminlogin" value="Login" />
+              &nbsp;
+              <input type="reset" name="adminreset" id="adminreset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">Log In Here &raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Administration</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1><a href="Home.html">R.N.Shah High School</a></h1>
+     
+    </div>
+    <div id="topnav">
+      <ul>
+        <li ><a href="Home.html">Home</a></li>
+        
+        <li><a href="Admission.html">Admission</a></li>
+      
+        <li><a href="AboutUs.html">About Us</a></li>
+          <li class="active"  class="last"><a href="ContactUs.html">Contact Us</a></li>
+        
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="container">
+    
+    <h6>Contact Us</h6>
+    <p>Over the past 80 years, the Mandal has developed a large educational complex in Vile Parle, in Suburban Mumbai and has spread its wings to metro cities like, Bangalore, Hyderabad, Chandigarh, Ahmedabad, Navi Mumbai, etc., SVKM today is proud of some of the finest educational institutes in the country like NMIMS deemed to be University, N.M. College of Commerce and Economics, Mithibai College, D.J. Sanghvi College of Engineering, Bhagubhai Mafatlal Polytechnic – to name a few. It has also in its family schools from Nursery to Secondary, Jr. College providing ICSE or IB, IGCSE curriculum or CBSE curriculum. With a strong vision and passion for being the pioneers of the modern education system, all SVKM institutes are state of the art, with ever expanding facilities and infrastructure.</p>
+   <P>
+    <h5>Address</h5>
+    R.N.Shah High School <br>
+    Nirmala Devi Arunkumar Ahuja Marg, <br>
+    J.V.P.D Scheme, <br>
+    Vile Parle (W), <br>
+    Mumbai - 400 049. <br>
+    Tel: 26289088 , 26232872 <br>
+    Email: enquiry@rnshahschool.com
+   </p>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+</body>
+</html>
